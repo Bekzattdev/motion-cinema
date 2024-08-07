@@ -5,7 +5,7 @@ import scss from "./MovieInfo.module.scss";
 
 const MovieInfo: React.FC = () => {
   const { data, isLoading } = useMovieQuery();
-
+// header
   useEffect(() => {
     if (data) {
       console.log("Данные получены:", data);
