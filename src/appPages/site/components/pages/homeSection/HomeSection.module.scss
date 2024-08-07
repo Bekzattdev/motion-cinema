@@ -1,0 +1,55 @@
+.homeCinema {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    .homeBlock {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        height: 550px;
+        // background: red;
+        .homeImg {
+            padding: 5px;
+            border: 2px solid rgba(128, 128, 128, 0.342);
+            border-radius: 10px;
+            width: 100%;
+        }
+        .homeText {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .date {
+                display: flex;
+                align-items: center;
+                h3 {
+                    font-weight: 600;
+                    color: gray;
+                    margin-right: 20px;
+                }
+                .cinemaStar {
+                    display: flex;
+                    align-items: start;
+                    a {
+                        font-size: 20px;
+                    }
+                    h4 {
+                        color: rgba(0, 0, 255, 0.513);
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
