@@ -2,14 +2,13 @@
 import { useGetOneMovieQuery, useMovieQuery } from "@/redux/api/movie";
 import React, { useEffect } from "react";
 import scss from "./MovieInfo.module.scss";
-import { IoStar } from "react-icons/io5";
+// import { IoStar } from "react-icons/io5";
 import Header from "../../layout/header/Header";
 
 const MovieInfo: React.FC = () => {
   const { data, isLoading } = useMovieQuery();
   const { data: oneMovie } = useGetOneMovieQuery(1);
-  console.log(oneMovie,"fdg");
-  
+  console.log(oneMovie, "fdg");
 
   useEffect(() => {
     if (data) {
@@ -29,7 +28,7 @@ const MovieInfo: React.FC = () => {
       <div className={scss.movie}>
         <div className={scss.movieBg}>
           <div className="container">
-            {data.map((item,index) => (
+            {data.map((item, index) => (
               <div className={scss.movieHome} key={index}>
                 <div className={scss.movieDetails}>
                   <div className={scss.movieImg}>
