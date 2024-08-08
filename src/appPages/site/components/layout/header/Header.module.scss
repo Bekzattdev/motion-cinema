@@ -22,14 +22,19 @@
                 color: black;
             }
         }
+
         .headerAbout {
             display: flex;
             align-items: center;
             gap: 40px;
             h2 {
+                // cursor: pointer;
                 font-size: 20px;
                 font-weight: 700;
-                cursor: pointer;
+            }
+            Link {
+                font-size: 20px;
+                font-weight: 700;
             }
         }
         .headerClient {

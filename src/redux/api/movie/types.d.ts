@@ -20,7 +20,7 @@ namespace MOVIE {
     world_premiere: string;
     budget: number;
     fees_in_usa: number;
-    fees_in_world: number;
+    fees_in_world: string;
     draft: boolean;
     date: number;
     quality: waggerQuality;
@@ -33,6 +33,8 @@ namespace MOVIE {
     director: number[];
     poster: string;
     _id: number;
-  }[];
+  };
   type GetMovieRequest = void;
 }
+
+

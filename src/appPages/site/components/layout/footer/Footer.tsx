@@ -15,14 +15,12 @@ const Footer = () => {
           <div className={scss.footerText}>
             <div className={scss.footerLogo}>
               <h1>
-                Mtion Cinema
+                Motion Cinema
                 <span>
                   <BiSolidCameraMovie />
                 </span>
               </h1>
-              {/* <a className="">
-                <TbTransferVertical />
-              </a> */}
+             
               <h2>
                 IT Club
                 <span>

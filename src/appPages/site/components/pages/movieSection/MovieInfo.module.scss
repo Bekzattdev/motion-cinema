@@ -1,0 +1,90 @@
+.movie {
+    background-image: url(https://inkorr.com/uploads/1707758417_.jpg);
+  .movieBg {
+    background: #000000be;
+    padding: 20px;
+    .movieHome {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      color: white;
+    //   gap: 50px;
+      .movieDetails {
+        display: flex;
+        align-items: center;
+        .movieImg {
+          width: 400px;
+          height: 600px;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 10px;
+          h2 {
+            font-size: 27px;
+          }
+          h3 {
+            font-size: 20px;
+            color: gray;
+            font-weight: 400;
+          }
+          img {
+            padding: 7px;
+            border: 2 solid rgba(128, 128, 128, 0.705);
+            width: 80%;
+          }
+        }
+        .movieText {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 10px;
+          ul {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 15px;
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              gap: 20px;
+              font-size: 18px;
+              font-weight: 700;
+              span {
+                display: flex;
+                font-size: 17px;
+                font-weight: 400;
+              }
+              .allStar {
+                display: flex;
+                align-items: start;
+                color: gray;
+                font-size: 20px;
+                font-weight: 500;
+              }
+            }
+          }
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            width: 600px;
+            span {
+              font-weight: 400;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      .movieVideo {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        iframe {
+          width: 900px;
+          height: 500px;
+        }
+      }
+    }
+  }
+}
