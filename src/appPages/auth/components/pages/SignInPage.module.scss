@@ -1,0 +1,137 @@
+.authLogIn {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220322/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-image_1067979.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  .filter {
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding-top: 80px;
+    .login {
+      width: 400px;
+      height: 600px;
+      background: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      gap: 30px;
+      h1 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        .loginName {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          h2 {
+            font-size: 16px;
+            font-weight: 700;
+          }
+          .name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.301);
+            width: 300px;
+
+            a {
+              color: gray;
+              font-size: 16px;
+              margin-bottom: 10px;
+            }
+            input {
+              padding-bottom: 5px;
+              outline: none;
+            }
+          }
+        }
+        .loginPassword {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          h2 {
+            font-size: 16px;
+            font-weight: 700;
+          }
+          .password {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.301);
+            width: 300px;
+            a {
+              color: gray;
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+            input {
+              padding-bottom: 5px;
+              outline: none;
+            }
+            h5 {
+              cursor: pointer;
+              margin-left: 20px;
+              font-size: 16px;
+            }
+          }
+        }
+        button {
+          background: rgb(4, 251, 223);
+          background: linear-gradient(
+            90deg,
+            rgba(4, 251, 223, 0.9809173669467787) 2%,
+            rgba(204, 60, 247, 1) 76%
+          );
+          width: 200px;
+          height: 35px;
+          border-radius: 50px;
+          font-size: 17px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+      .using {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 50px;
+        gap: 10px;
+        h4 {
+          font-weight: 600;
+        }
+        a {
+            font-size: 27px;
+        }
+      }
+      h3 {
+        color: gray;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+      }
+      h3:hover {
+        transform: scale(1.1);
+        transition: 0.8s;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+}

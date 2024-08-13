@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <div className={scss.footerShare}>
               <h1>Поделится:</h1>
-              <a className="">@MotionWe.me</a>
+              <a className="">@MotionWeb.me</a>
               <div className={scss.footerIcon}>
                 <a className="">
                   <FaFacebook

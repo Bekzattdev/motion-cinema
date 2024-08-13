@@ -10,6 +10,7 @@ const MovieInfo: React.FC = () => {
   const { data: oneMovie } = useGetOneMovieQuery(1);
   console.log(oneMovie,"fdg");
   
+  
 
   useEffect(() => {
     if (data) {
