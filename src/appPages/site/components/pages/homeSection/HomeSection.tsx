@@ -7,18 +7,9 @@ import { useState } from "react";
 
 const HomeSection = () => {
   const { data } = useMovieQuery();
-<<<<<<< HEAD
-  console.log("HomeSection", data);
-=======
->>>>>>> af59f13c55ba21674d69211432299ead1ec59afa
-
   return (
     <section>
       <div className="container">
-<<<<<<< HEAD
-=======
-
->>>>>>> af59f13c55ba21674d69211432299ead1ec59afa
         <div className={scss.mainSection}>
           <h1>Лучшие Фильмы</h1>
           <div className={scss.homeCinema}>
