@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useEffect } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { usePostLoginMutation } from "@/redux/api/auth";
@@ -12,6 +12,7 @@ const SignInPage: React.FC = () => {
     reset,
     formState: { isSubmitting, errors },
   } = useForm<Auth.Login>();
+
   const router = useRouter();
   const [login] = usePostLoginMutation();
 
@@ -30,13 +31,11 @@ const SignInPage: React.FC = () => {
       localStorage.setItem("refresh", JSON.stringify(refresh));
       localStorage.setItem("id", JSON.stringify(id));
       router.push("/");
-    }
-    if (error) {
+    } else {
       alert("Не найдено активной учетной  записи с указанными данными");
     }
     reset();
   };
-
   return (
     <div className="auth">
       <div className="container">

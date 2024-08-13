@@ -10,51 +10,54 @@
     height: 80vh;
     background: rgba(0, 0, 0, 0.632);
     color: white;
-      .homeAbout {
+    .homeAbout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 100px;
+      margin-left: 100px;
+      h2 {
+        font-size: 60px;
+        font-weight: 600;
+      }
+      h5 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .homeInput {
         display: flex;
-        align-items: start;
-        flex-direction: column;
-        padding-top: 100px;
-        margin-left: 100px;
-        h2 {
-          font-size: 60px;
-          font-weight: 600;
+        align-items: center;
+        position: relative;
+        input {
+          margin-top: 20px;
+          width: 1200px;
+          height: 50px;
+          padding-left: 20px;
+          border-radius: 50px;
+          background: #fff;
+          color: #000;
         }
-        h5 {
-          font-size: 40px;
-          font-weight: 600;
-        }
-        .homeInput {
+        button {
+          position: absolute;
+          bottom: 0;
+          right: 0px;
           display: flex;
           align-items: center;
-          position: relative;
-          input {
-            margin-top: 20px;
-            width: 1200px;
-            height: 50px;
-            padding-left: 20px;
-            border-radius: 50px;
-          }
-          button {
-            position: absolute;
-            bottom: 0;
-            right: -10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border-radius: 50px;
-            width: 100px;
-            height: 50px;
-            color: rgb(66, 63, 63);
-            font-weight: 700;
-            background: linear-gradient(
-              90deg,
-              rgba(4, 251, 223, 0.9809173669467787) 16%,
-              rgba(10, 15, 253, 0.9809173669467787) 100%
-            );
-          }
+          justify-content: center;
+          gap: 10px;
+          border-radius: 50px;
+          width: 100px;
+          height: 50px;
+          color: rgb(66, 63, 63);
+          font-weight: 700;
+          background: linear-gradient(
+            90deg,
+            rgba(4, 251, 223, 0.9809173669467787) 16%,
+            rgba(10, 15, 253, 0.9809173669467787) 100%
+          );
         }
       }
+    }
   }
 }

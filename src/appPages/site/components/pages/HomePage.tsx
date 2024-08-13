@@ -1,12 +1,9 @@
 "use client";
 import HomeSection from "./homeSection/HomeSection";
 import scss from "./HomePage.module.scss";
-import { TbMovie } from "react-icons/tb";
 import { FiSearch } from "react-icons/fi";
-// import { useMovieQuery } from "@/redux/api/movie";
 
 const HomePage = () => {
-  // const { data } = useMovieQuery();
   return (
     <>
       <div className={scss.homeBgImg}>

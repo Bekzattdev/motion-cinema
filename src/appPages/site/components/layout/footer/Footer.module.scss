@@ -1,79 +1,78 @@
 .footer {
+  width: 100%;
+  height: 30vh;
+  background-image: url(https://sun9-63.userapi.com/impg/-ekFoK65kBUFujdw-7CFBtRr-nqrX4c6KiezQg/-Vfq6KDLaTU.jpg?size=807x454&quality=96&sign=a0c970c097699e247f837473ed41fbe4&type=album);
+  // padding-top: 50px;
+  .footerBg {
+    padding-top: 20px;
     width: 100%;
-    height:30vh;
-    background-image: url(https://sun9-63.userapi.com/impg/-ekFoK65kBUFujdw-7CFBtRr-nqrX4c6KiezQg/-Vfq6KDLaTU.jpg?size=807x454&quality=96&sign=a0c970c097699e247f837473ed41fbe4&type=album);
-    // padding-top: 50px;
-    .footerBg {
-        padding-top: 20px;
-        width: 100%;
-        height: 220px;
-        background: rgba(0, 0, 0, 0.642);
-        .footerText {
-          
-            color:white;
-            display: flex;
-            align-items: start;
-            justify-content: space-between;
-            .footerLogo {
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                gap: 10px;
-                h1 {
-                    font-size: 30px;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    color: darkturquoise;
-                }
-                h2 {
-                    font-size: 30px;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    color:red;
-                }
-            }
-            .footerAbout {
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                gap: 5px;
-                h1 {
-                    font-size: 25px;
-                    font-weight: 700;
-                }
-                a {
-                    font-size: 18px;
-                }
-            }
-            .footerInfo {
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                gap: 5px;
-                h1 {
-                    font-size: 25px;
-                    font-weight: 700;
-                }
-                a {
-                    font-size: 18px;
-                }
-            }
-            .footerShare {
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                gap: 10px;
-                .footerIcon {
-                    display: flex;
-                    align-items: center;
-                    font-size: 20px;
-                    gap: 10px;
-                }
-            }
+    height: 270px;
+    background: rgba(0, 0, 0, 0.642);
+    .footerText {
+      color: white;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      .footerLogo {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: darkturquoise;
         }
+        h2 {
+          font-size: 30px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: red;
+        }
+      }
+      .footerAbout {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+        h1 {
+          font-size: 25px;
+          font-weight: 700;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+      .footerInfo {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+        h1 {
+          font-size: 25px;
+          font-weight: 700;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+      .footerShare {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        .footerIcon {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          gap: 10px;
+        }
+      }
     }
+  }
 }

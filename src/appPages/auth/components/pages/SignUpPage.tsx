@@ -24,7 +24,7 @@ const SignUpPage: React.FC = () => {
     }
     const { data: response } = await registration(formData);
     if (response) {
-      router.push("/auth/sign-in");
+      router.push("/");
     } else {
       alert("Не удалось зарегистрироваться, попробуйте снова!");
     }
