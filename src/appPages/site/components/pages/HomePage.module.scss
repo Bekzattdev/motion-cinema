@@ -44,35 +44,18 @@
           right: 0px;
           display: flex;
           align-items: center;
-          position: relative;
-          input {
-            margin-top: 20px;
-            width: 1200px;
-            height: 50px;
-            padding-left: 20px;
-            border-radius: 50px;
-            outline: none;
-            color: black;
-          }
-          button {
-            position: absolute;
-            bottom: 0;
-            right: -10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border-radius: 50px;
-            width: 100px;
-            height: 50px;
-            color: rgb(66, 63, 63);
-            font-weight: 700;
-            background: linear-gradient(
-              90deg,
-              rgba(4, 251, 223, 0.9809173669467787) 16%,
-              rgba(10, 15, 253, 0.9809173669467787) 100%
-            );
-          }
+          justify-content: center;
+          gap: 10px;
+          border-radius: 50px;
+          width: 100px;
+          height: 50px;
+          color: rgb(66, 63, 63);
+          font-weight: 700;
+          background: linear-gradient(
+            90deg,
+            rgba(4, 251, 223, 0.9809173669467787) 16%,
+            rgba(10, 15, 253, 0.9809173669467787) 100%
+          );
         }
       }
     }

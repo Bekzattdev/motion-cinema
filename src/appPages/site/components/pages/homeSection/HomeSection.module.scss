@@ -1,14 +1,16 @@
-.homeCinema {
+.mainSection {
+  text-align: center;
   h1 {
     font-size: 30px;
     margin-bottom: 40px;
     font-weight: 700;
   }
-  .allHomeBlock {
+  .homeCinema {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+
     .homeBlock {
       display: flex;
       align-items: start;
