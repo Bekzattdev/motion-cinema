@@ -122,28 +122,3 @@ const MovieInfo: React.FC = () => {
 };
 
 export default MovieInfo;
-
-// "use client";
-// import { useEffect } from "react";
-// import axios from "axios";
-
-// const TestMovieRequest = () => {
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await axios.get(
-//           "http://16.170.243.18:8000/ru/movie/2"
-//         );
-//         console.log("Response:", response.data);
-//       } catch (error) {
-//         console.error("Error fetching movie data:", error);
-//       }
-//     };
-
-//     fetchData();
-//   }, []);
-
-//   return <div>Check console for movie data</div>;
-// };
-
-// export default TestMovieRequest;

@@ -14,7 +14,6 @@ const Header = () => {
           <h1>
             MotionCinema
             <span>
-              {" "}
               <BiSolidCameraMovie />
             </span>{" "}
           </h1>

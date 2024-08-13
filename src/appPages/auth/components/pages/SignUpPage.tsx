@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { usePostRegistrationMutation } from "@/redux/api/auth";
 import scss from "./SignUpPage.module.scss";
+import { TextField } from "@mui/material";
+import { FcGoogle } from "react-icons/fc";
 
 const SignUpPage: React.FC = () => {
   const {
@@ -31,42 +33,64 @@ const SignUpPage: React.FC = () => {
     reset();
   };
   return (
-    <div className="auth">
-      <div className="container">
-        <div className="auth">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <h2>Registration</h2>
-            <input
-              placeholder="First name"
-              type="text"
-              {...register("first_name", { required: true })}
-            />
-            <input
-              placeholder="Last name"
-              type="text"
-              {...register("last_name", { required: true })}
-            />
-            <input
-              placeholder="Username"
-              type="text"
-              {...register("username", { required: true })}
-            />
-            <input
-              placeholder="Email"
-              type="text"
-              {...register("email", { required: true })}
-            />
-            <input
-              placeholder="Password"
-              type="text"
-              {...register("password", { required: true })}
-            />
-            {isSubmitting ? (
-              <button type="button">Submitting</button>
-            ) : (
-              <button type="submit">Sign-up</button>
-            )}
-          </form>
+    <div className={scss.authSignIn}>
+      <div className={scss.filter}>
+        <div className="container">
+          <center>
+            <div className={scss.login}>
+              <h2>Create Your Account</h2>
+              <form onSubmit={handleSubmit(onSubmit)} className={scss.inputs}>
+                <div className={scss.dataSignUp}>
+                  <TextField
+                    sx={{ width: "300px" }}
+                    label="First Name"
+                    multiline
+                    variant="standard"
+                    {...register("first_name", { required: true })}
+                  />
+                  <TextField
+                    sx={{ width: "300px" }}
+                    label="Last Name"
+                    multiline
+                    variant="standard"
+                    {...register("last_name", { required: true })}
+                  />
+                  <TextField
+                    sx={{ width: "300px" }}
+                    label="User Name"
+                    multiline
+                    variant="standard"
+                    {...register("username", { required: true })}
+                  />
+                  <TextField
+                    sx={{ width: "300px" }}
+                    label="Email"
+                    multiline
+                    variant="standard"
+                    {...register("email", { required: true })}
+                  />
+                  <TextField
+                    sx={{ width: "300px" }}
+                    label="Password"
+                    multiline
+                    variant="standard"
+                    {...register("password", { required: true })}
+                  />
+                </div>
+                {isSubmitting ? (
+                  <button type="button">Submitting</button>
+                ) : (
+                  <button type="submit">Sign-up</button>
+                )}
+              </form>
+              <div className={scss.createGoogle}>
+                <h1>Create With Google</h1>
+                <a className="">
+                  <FcGoogle />
+                </a>
+              </div>
+            </div>
+          </center>
         </div>
       </div>
     </div>
