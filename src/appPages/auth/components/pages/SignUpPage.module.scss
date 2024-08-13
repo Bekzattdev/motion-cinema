@@ -1,73 +1,72 @@
 .authSignIn {
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220322/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-image_1067979.jpg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220322/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-image_1067979.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  .filter {
     height: 100vh;
     width: 100%;
-    .filter {
-        height: 100vh;
-        width: 100%;
-        backdrop-filter: blur(10px);
-        padding-top: 80px;
-        .login {
-            width: 500px;
-            height: 600px;
-            background: white;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            border-radius: 20px;
-            gap: 30px;
-            h2 {
-                font-size: 20px;
-                font-weight: 600;
-            }
-            .inputs {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                gap: 30px;
-                .dataSignUp {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                  
-                }
-                button {
-                    background: rgb(4, 251, 223);
-                    background: linear-gradient(
-                      90deg,
-                      rgba(4, 251, 223, 0.9809173669467787) 2%,
-                      rgba(204, 60, 247, 1) 76%
-                    );
-                    width: 200px;
-                    height: 35px;
-                    border-radius: 50px;
-                    font-size: 17px;
-                    font-weight: 600;
-                    color: white;
-                }
-            }
-            .createGoogle {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                cursor: pointer;
-                width: 300px;
-                height: 40px;
-                border: 2px solid rgba(128, 128, 128, 0.466);
-                display: flex;
-                justify-content: center;                
-                border-radius: 50px;
-                h1 {
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-                a {
-                    font-size: 25px;
-                }
-            }
+    backdrop-filter: blur(10px);
+    padding-top: 80px;
+    .login {
+      width: 500px;
+      height: 600px;
+      background: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      gap: 30px;
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        .dataSignUp {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
         }
+        button {
+          background: rgb(4, 251, 223);
+          background: linear-gradient(
+            90deg,
+            rgba(4, 251, 223, 0.9809173669467787) 2%,
+            rgba(204, 60, 247, 1) 76%
+          );
+          width: 200px;
+          height: 35px;
+          border-radius: 50px;
+          font-size: 17px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+      .createGoogle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        width: 300px;
+        height: 40px;
+        border: 2px solid rgba(128, 128, 128, 0.466);
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        h1 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        a {
+          font-size: 25px;
+        }
+      }
     }
+  }
 }
