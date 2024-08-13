@@ -1,5 +1,6 @@
 namespace MOVIE {
   type GetMovieResponse = {
+    map(arg0: (item: any, index: any) => React.JSX.Element): unknown;
     title: string;
     title_ru: string;
     title_ky: string;
@@ -32,9 +33,8 @@ namespace MOVIE {
     genres: number[];
     director: number[];
     poster: string;
-    _id: number;
+    id: number;
+    video: sting;
   };
   type GetMovieRequest = void;
 }
-
-

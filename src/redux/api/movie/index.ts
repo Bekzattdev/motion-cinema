@@ -9,10 +9,9 @@ const api = index.injectEndpoints({
       }),
       providesTags: ["movie"],
     }),
-
-    getOneMovie: build.query<MOVIE.GetMovieResponse, number>({
+    getOneMovie: build.query<MOVIE.GetMovieResponse, string | number>({
       query: (id) => ({
-        url: `movie/info/${id}`,
+        url: `movie/${id}`,
         method: "GET",
       }),
       providesTags: ["movie"],

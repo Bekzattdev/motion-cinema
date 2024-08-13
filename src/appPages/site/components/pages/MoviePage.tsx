@@ -1,11 +1,4 @@
 import MovieInfo from "./movieSection/MovieInfo";
 
-const MoviePage = () => {
-  return (
-    <>
-      <MovieInfo />
-    </>
-  );
-};
-
+const MoviePage = () => <MovieInfo />;
 export default MoviePage;
