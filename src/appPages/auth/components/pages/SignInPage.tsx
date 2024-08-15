@@ -2,7 +2,6 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { usePostLoginMutation } from "@/redux/api/auth";
-import scss from "./SignInPage.module.scss";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineLock } from "react-icons/md";
 import { IoEyeSharp } from "react-icons/io5";
@@ -10,6 +9,8 @@ import { BsFillEyeSlashFill } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useState } from "react";
+import { Box, TextField } from "@mui/material";
+import scss from "./SignInPage.module.scss";
 
 const SignInPage: React.FC = () => {
   const {
@@ -52,30 +53,29 @@ const SignInPage: React.FC = () => {
               <h1>Login</h1>
               <form onSubmit={handleSubmit(onSubmit)} className={scss.inputs}>
                 <div className={scss.loginName}>
-                  <h2>Username</h2>
                   <div className={scss.name}>
-                    <a className="">
-                      <FaRegUser />
-                    </a>
-                    <input
-                      placeholder="Username"
+                    <TextField
+                      sx={{ width: "300px" }}
+                      label="User name"
+                      multiline
                       type="text"
+                      variant="standard"
                       {...register("username", { required: true })}
                     />
                   </div>
                 </div>
                 <div className={scss.loginPassword}>
-                  <h2>UserPassword</h2>
                   <div className={scss.password}>
-                    <a className="">
-                      <MdOutlineLock />
-                    </a>
-                    <input
-                      placeholder="Password"
-                      type={password ? "text" : "password"}
+                    <TextField
+                      sx={{ width: "300px" }}
+                      label="Password"
+                      multiline
+                      variant="standard"
+                      type={password ? "password" : "password"}
                       {...register("password", { required: true })}
                     />
-                    <h5 className="">
+
+                    {/* <h5 className="">
                       {password ? (
                         <IoEyeSharp
                           onClick={() => {
@@ -88,8 +88,8 @@ const SignInPage: React.FC = () => {
                             setPassword(true);
                           }}
                         />
-                      )}
-                    </h5>
+                      )} */}
+                    {/* </h5> */}
                   </div>
                 </div>
                 {isSubmitting ? (

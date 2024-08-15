@@ -4,7 +4,7 @@ const api = index.injectEndpoints({
   endpoints: (build) => ({
     movie: build.query<MOVIE.GetMovieResponse[], MOVIE.GetMovieRequest>({
       query: () => ({
-        url: "movie",
+        url: `movie/`,
         method: "GET",
       }),
       providesTags: ["movie"],

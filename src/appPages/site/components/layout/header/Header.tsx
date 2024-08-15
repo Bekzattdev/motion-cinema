@@ -15,14 +15,18 @@ const Header = () => {
             MotionCinema
             <span>
               <BiSolidCameraMovie />
-            </span>{" "}
+            </span>
           </h1>
           <div className={scss.headerAbout}>
             <h2>
               <Link href={"/"}>Home</Link>
             </h2>
-            <h2>Top Rated</h2>
-            <h2>Popular</h2>
+            <h2>
+              <Link href={"/top"}>Top Rated</Link>
+            </h2>
+            <h2>
+              <Link href={"/popular"}>Popular</Link>
+            </h2>
           </div>
           <div className={scss.headerClient}>
             <input

@@ -1,5 +1,4 @@
-import MovieSearch from '@/appPages/site/components/pages/movieSection/MovieSearch';
-import React from 'react';
+import MovieSearch from "@/appPages/site/components/pages/movieSection/MovieSearch";
 
-const page = () => <MovieSearch/>
+const page = () => <MovieSearch />;
 export default page;

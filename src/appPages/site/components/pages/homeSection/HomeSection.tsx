@@ -3,10 +3,10 @@ import { useMovieQuery } from "@/redux/api/movie";
 import scss from "./HomeSection.module.scss";
 import { IoStar } from "react-icons/io5";
 import Link from "next/link";
-import { useState } from "react";
 
 const HomeSection = () => {
   const { data } = useMovieQuery();
+
   return (
     <section>
       <div className="container">

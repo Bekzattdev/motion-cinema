@@ -36,5 +36,6 @@ namespace MOVIE {
     id: number;
     video: sting;
   };
-  type GetMovieRequest = void;
+
+  type GetMovieRequest =void
 }
